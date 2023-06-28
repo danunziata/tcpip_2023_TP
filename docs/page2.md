@@ -7,5 +7,5 @@
 Example of `text 1`
 
 ```
-Exaxample of text 2
+Example of text 2
 ```
