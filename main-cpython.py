@@ -68,7 +68,7 @@ mqtt.Client.bad_connection_flag = False
 
 # Parametros A Utilizar
 
-host = "192.168.5.216"
+host = "192.168.5.216"  # host del Broker
 id = "fede"
 topic_rpc = "v1/devices/me/rpc/request/+"
 topic_telemetry = "v1/devices/me/telemetry"
@@ -115,4 +115,4 @@ except KeyboardInterrupt:
     print("")
     client.disconnect()
     client.loop_stop()
-    time.sleep(5)
+    time.sleep(3)
