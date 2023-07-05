@@ -1,0 +1,4 @@
+- testing
+- organizar readme
+- codigos fuentes
+- organizar mkdocs
