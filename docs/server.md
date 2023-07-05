@@ -37,3 +37,29 @@ Para ponerlo en funcionamiento ejecutamos los comandos
 docker compose up -d
 docker compose logs -f mytb
 ```
+
+# Ngrok
+
+Ngrok es una herramienta que permite crear túneles seguros desde internet hacia una red local. Actúa como un intermediario entre la red pública y una computadora local, permitiendo acceder a servicios y aplicaciones alojados localmente desde cualquier lugar. Ngrok asigna una URL única que redirige el tráfico externo a través de un canal seguro hasta el servidor local. Esto facilita la exposición de servicios locales para pruebas, demostraciones o acceso remoto. Ngrok es ampliamente utilizado en desarrollo web, pruebas de aplicaciones y en entornos de colaboración remota.
+
+Para realizar un tunel debemos crear una cuenta e instalar el servicio en el servidor con el comando:
+
+```
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
+```
+
+Una vez realizamos la autentificacion en el servicio
+```
+ngrok config add-authtoken <token>
+```
+
+Utilizamos un archivo de configuracion para poder crear 1 tunel con 2 servicios simultaneos, uno para la interfaz grafica y otra para la comunicacion por MQTT
+```
+
+```
+
+Por ultimo, ponemos en marcha el servicio
+
+```
+ngrok start -all
+```
