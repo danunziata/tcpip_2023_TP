@@ -1,8 +1,8 @@
-# ThingsBoard
+## ThingsBoard
 
 ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management. It enables device connectivity via industry standard IoT protocols - MQTT, CoAP and HTTP and supports both cloud and on-premises deployments. ThingsBoard combines scalability, fault-tolerance and performance so you will never lose your data.
 
-## Instalacion del servicio
+### Instalacion del servicio
 
 Para instalar el servidor hacemos uso de la plataforma Docker que es una plataforma de contenedores que permite la creación, distribución y ejecución de aplicaciones de forma eficiente y portátil. Proporciona un entorno aislado para cada aplicación, facilitando la gestión y la escalabilidad de los servicios, sin depender del sistema operativo subyacente. Utilizaremos docker compose por lo tanto haremos uso del archivo de configuracion en formato .yml
 
@@ -38,9 +38,11 @@ docker compose up -d
 docker compose logs -f mytb
 ```
 
-# Ngrok
+## Ngrok
 
 Ngrok es una herramienta que permite crear túneles seguros desde internet hacia una red local. Actúa como un intermediario entre la red pública y una computadora local, permitiendo acceder a servicios y aplicaciones alojados localmente desde cualquier lugar. Ngrok asigna una URL única que redirige el tráfico externo a través de un canal seguro hasta el servidor local. Esto facilita la exposición de servicios locales para pruebas, demostraciones o acceso remoto. Ngrok es ampliamente utilizado en desarrollo web, pruebas de aplicaciones y en entornos de colaboración remota.
+
+### Instalacion del servicio
 
 Para realizar un tunel debemos crear una cuenta e instalar el servicio en el servidor con el comando:
 
