@@ -14,7 +14,7 @@ sudo apt-get install mosquitto-clients
 
 ## Archivo de configuracion
 
-Este archivo contiene todas las funcionalidades que se van a activar en el broker para su utilizacion
+Este archivo contiene todas las funcionalidades que se van a activar en el broker para su utilizacion, este archivo se llama config.conf y estara ubicado en la carpeta /etc/mosquitto/conf.d
 
 ```
 #permite a los clientes sin usuario conectarse
