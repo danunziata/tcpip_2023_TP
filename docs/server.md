@@ -62,9 +62,7 @@ ngrok config add-authtoken <token>
 
 Utilizamos un archivo de configuracion para poder crear 1 tunel con 2 servicios simultaneos, uno para la interfaz grafica y otra para la comunicacion por MQTT
 
-```
-
-```
+[config.conf](https://github.com/danunziata/tcpip_2023_TP/blob/main/apps/config.conf)
 
 Por ultimo, ponemos en marcha el servicio
 
