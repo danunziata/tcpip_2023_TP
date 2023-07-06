@@ -2,7 +2,6 @@ name: Testing
 
 on:
   schedule:
-    # Run every minute
     - cron: "*/5 * * * *"
 
 jobs:
@@ -14,4 +13,4 @@ jobs:
         uses: srt32/uptime@v0.2
         with:
           url-to-hit: "https://www.youtube.com/"
-          expected-statuses: "200,301"
+          expected-statuses: "200"
