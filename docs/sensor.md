@@ -1,5 +1,7 @@
 # ESP8266
 
+## Introduccion
+
 El ESP8266 es un chip Wi-Fi de bajo coste con pila TCP/IP completa y capacidad de MCU (Micro Controller Unit) producida por el fabricante chino Espressif Systems, con sede en Shanghai.
 
 Utilizaremos el ESP8266 para conectarlo junto a los sensores y actuadores para poder asi recolectar e enviar los datos al broker local y recibir informacion del mismo para poder tomar decisiones con la informacion dada.
@@ -10,7 +12,7 @@ En nuestro caso, ponemos a disposicion 2 scripts que cuentan con implementacione
 
 Haremos uso de la libreria paho-mqtt que cuenta con todas las funcionalidades para disponer de la comunicacion a traves del protocolo MQTT.
 
-```
+```py
 import paho.mqtt.client as mqtt     # import client library
 import time
 import json
@@ -135,7 +137,7 @@ except KeyboardInterrupt:
 
 La adaptacion del script anterior se utiliza con una libreria denominada umqttsimple
 
-```
+```py
 import gc
 import network
 import time

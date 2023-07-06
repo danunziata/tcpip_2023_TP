@@ -1,13 +1,15 @@
 ## ThingsBoard
 
-ThingsBoard is an open-source IoT platform for data collection, processing, visualization, and device management. It enables device connectivity via industry standard IoT protocols - MQTT, CoAP and HTTP and supports both cloud and on-premises deployments. ThingsBoard combines scalability, fault-tolerance and performance so you will never lose your data.
+## Introduccion
+
+ThingsBoard es una plataforma IoT de código abierto para la recolección, procesamiento, visualización y gestión de dispositivos. Permite la conectividad de dispositivos a través de protocolos estándar de IoT como MQTT, CoAP y HTTP, y admite implementaciones tanto en la nube como en local. ThingsBoard combina escalabilidad, tolerancia a fallos y rendimiento para que nunca pierdas tus datos.
 
 ### Instalacion del servicio
 
 Para instalar el servidor hacemos uso de la plataforma Docker que es una plataforma de contenedores que permite la creación, distribución y ejecución de aplicaciones de forma eficiente y portátil. Proporciona un entorno aislado para cada aplicación, facilitando la gestión y la escalabilidad de los servicios, sin depender del sistema operativo subyacente. Utilizaremos docker compose por lo tanto haremos uso del archivo de configuracion en formato .yml
 
-```
-version: '3.0'
+```yml
+version: "3.0"
 services:
   mytb:
     restart: always
@@ -26,14 +28,14 @@ services:
 
 Necesitamos tambien crear carpetas que contengan los datos y logs del sistema
 
-```
+```sh
 mkdir -p ~/.mytb-data && sudo chown -R 799:799 ~/.mytb-data
 mkdir -p ~/.mytb-logs && sudo chown -R 799:799 ~/.mytb-logs
 ```
 
-Para ponerlo en funcionamiento ejecutamos los comandos
+Para ponerlo en funcionamiento ejecutamos los comandos:
 
-```
+```sh
 docker compose up -d
 docker compose logs -f mytb
 ```
