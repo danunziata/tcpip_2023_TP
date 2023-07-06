@@ -13,5 +13,5 @@ jobs:
       - name: Check the site
         uses: srt32/uptime@v0.2
         with:
-          url-to-hit: "https://example.com"
+          url-to-hit: "https://www.youtube.com/"
           expected-statuses: "200,301"
