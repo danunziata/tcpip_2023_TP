@@ -1,0 +1,17 @@
+name: Testing
+
+on:
+  schedule:
+    # Run every minute
+    - cron: "*/5 * * * *"
+
+jobs:
+  ping_site:
+    runs-on: ubuntu-latest
+    name: Uptime Check
+    steps:
+      - name: Check the site
+        uses: srt32/uptime@v0.2
+        with:
+          url-to-hit: "https://example.com"
+          expected-statuses: "200,301"
