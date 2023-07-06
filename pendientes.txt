@@ -1,3 +1,0 @@
-- testing
-- organizar readme
-- organizar mkdocs
