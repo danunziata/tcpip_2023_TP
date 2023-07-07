@@ -1,16 +1,16 @@
 #name: Testing
 
-on:
-  schedule:
-    - cron: "*/5 * * * *"
-
-jobs:
-  ping_site:
-    runs-on: ubuntu-latest
-    name: Uptime Check
-    steps:
-      - name: Check the site
-        uses: srt32/uptime@v0.2
-        with:
-          url-to-hit: "https://6664-200-7-133-1.ngrok-free.app/"
-          expected-statuses: "200"
+#on:
+#  schedule:
+#    - cron: "*/5 * * * *"
+#
+#jobs:
+#  ping_site:
+#    runs-on: ubuntu-latest
+#    name: Uptime Check
+#    steps:
+#      - name: Check the site
+#        uses: srt32/uptime@v0.2
+#        with:
+#          url-to-hit: "https://6664-200-7-133-1.ngrok-free.app/"
+#          expected-statuses: "200"
